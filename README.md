@@ -1,11 +1,12 @@
-# Bengali Fake News and Hate Speech Detection — Revision Figures
+# Bengali Fake News & Hate Speech — TALLIP Revision Figures
 
-This repository contains research figures prepared for the ACM TALLIP manuscript revision (TALLIP-26-0521).
+Figures prepared for manuscript revision **TALLIP-26-0521**: *Domain-Specific Pretraining Helps Where Context Is Long: An Explainable Transformer Framework for Bengali Fake News and Hate Speech Detection*.
 
-- `Main_Figures/`: Figures 1–6 from verified experimental evidence.
-- `Supplementary_Figures/`: selected supporting analyses and updated IG–SHAP examples.
-- `Figure_Captions/`: scope and interpretation notes for reproducible manuscript placement.
+## Figure folders
 
-**Scientific scope:** Multiseed model comparisons use original held-out test labels. Human-review subsets are not full corrected gold standards. Selected SHAP/LIME/IG examples are illustrative and do not constitute population-level faithfulness or leakage-free retraining. IG and SHAP use different output scales.
+- [Main_Figures](Main_Figures) — manuscript Figures **1–6**, PNG/PDF, with SVG for Figures 1–4 and a full caption/limitations file.
+- [Supplementary_Figures](Supplementary_Figures) — verified/updated supplementary figures **S1, S4, S6–S12**, PNG/PDF, including newly repaired **S8 and S9**. See the folder README for the evidence constraints and deliberate exclusions.
 
-**Caution:** The repository is public. Do not upload raw annotated Bengali comments, personally identifying data, model checkpoints, or unpublished reviewer correspondence without separate review.
+All images originate from the author's previously saved experimental outputs or in-memory renderings of those outputs; no experimental metric or token importance score was fabricated to complete a panel. Some explanatory figures are **illustrative**, and some compare independent models/cohorts. Read [Main captions](Main_Figures/CAPTIONS.md) and [Supplementary notes](Supplementary_Figures/README.md) before citing.
+
+**Important:** This public repository does not contain the complete manuscript, annotation data, model checkpoints or peer-review correspondence. It is not evidence that all reviewer requests are finished or that the figures are independently validated against rerun checkpoints.
