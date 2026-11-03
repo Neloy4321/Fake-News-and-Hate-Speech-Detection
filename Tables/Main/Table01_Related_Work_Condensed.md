@@ -1,0 +1,14 @@
+# Table 1: Selected research relevant to Bengali language models, detection tasks, and explanation methods (condensed from 30 studies in the submitted manuscript).
+
+| Study (ref.) | Primary contribution | Task/domain | Explanation |
+| --- | --- | --- | --- |
+| Bhattacharjee et al. (2022) [1] | BanglaBERT / BanglaT5 pretraining | Bengali language models | No |
+| Hossain et al. (2020) [3] | BanFakeNews benchmark | Fake news | No |
+| Romim et al. (2022) [4] | BD-SHS corpus | Hate speech | No |
+| Jahan et al. (2022) [5] | BanglaHateBERT | Hate speech | No |
+| Belal et al. (2023) [6] | LIME-based explanation | Toxic comments | Yes |
+| Paul et al. (2024) [10] | BanglaBERT with LIME | Bengali dialects | Yes |
+| Ghosh and Senapati (2022) [15] | BanglaBERT / XLM-R comparison | Bengali classification | No |
+| Karim et al. (2021) [17] | DeepHateExplainer / XLM-R | Hate speech | Yes |
+
+**Notes.** Bibliographic descriptors are inherited from the submitted reference list; the condensed table does not reproduce unverified cross-study accuracy comparisons.

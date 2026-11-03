@@ -1,0 +1,18 @@
+# Supplementary Table S1: Complete per-seed source-label test metrics for the four task–encoder conditions.
+
+| Task | Model | Seed | n | Acc (%) | Macro F1 (%) | ROC AUC (%) |
+| --- | --- | --- | --- | --- | --- | --- |
+| Fake News | BanglaBERT | 42 | 9,489 | 91.980 | 90.843 | 96.873 |
+| Fake News | BanglaBERT | 52 | 9,489 | 91.769 | 90.591 | 96.773 |
+| Fake News | BanglaBERT | 62 | 9,489 | 91.980 | 90.886 | 97.008 |
+| Fake News | mBERT | 42 | 9,489 | 84.108 | 81.458 | 90.077 |
+| Fake News | mBERT | 52 | 9,489 | 85.731 | 83.245 | 91.764 |
+| Fake News | mBERT | 62 | 9,489 | 83.802 | 81.054 | 88.136 |
+| Hate Speech | BanglaBERT | 42 | 5,029 | 92.961 | 92.947 | 97.638 |
+| Hate Speech | BanglaBERT | 52 | 5,029 | 92.523 | 92.522 | 97.231 |
+| Hate Speech | BanglaBERT | 62 | 5,029 | 92.503 | 92.502 | 97.508 |
+| Hate Speech | mBERT | 42 | 5,029 | 90.913 | 90.901 | 96.491 |
+| Hate Speech | mBERT | 52 | 5,029 | 91.291 | 91.276 | 96.236 |
+| Hate Speech | mBERT | 62 | 5,029 | 90.416 | 90.401 | 95.856 |
+
+**Notes.** Each archived seed is one separately completed run. Do not treat these 12 rows as independent test sets or give the legacy original single-seed scores as if they arose from these archives.

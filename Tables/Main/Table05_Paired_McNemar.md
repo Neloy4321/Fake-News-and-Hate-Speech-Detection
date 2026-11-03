@@ -1,0 +1,12 @@
+# Table 5: Paired BanglaBERT versus mBERT test differences for each seed, based on the same original-label held-out rows.
+
+| Task | Seed | A only | B only | Δ Acc. (pp) | Bootstrap 95% CI (pp) | Holm p |
+| --- | --- | --- | --- | --- | --- | --- |
+| Fake News | 42 | 1,014 | 267 | 7.872 | [7.166, 8.578] | 5.26e-102 |
+| Fake News | 52 | 825 | 252 | 6.039 | [5.364, 6.724] | 6.00e-71 |
+| Fake News | 62 | 1,066 | 290 | 8.178 | [7.430, 8.916] | 1.26e-103 |
+| Hate Speech | 42 | 187 | 84 | 2.048 | [1.412, 2.684] | 1.07e-9 |
+| Hate Speech | 52 | 190 | 128 | 1.233 | [0.537, 1.929] | 6.03e-4 |
+| Hate Speech | 62 | 241 | 136 | 2.088 | [1.312, 2.863] | 1.41e-7 |
+
+**Notes.** Here A = BanglaBERT and B = mBERT; 'A only' and 'B only' count discordant correctness. McNemar uses the two-sided exact binomial test, Holm correction spans six comparisons. Intervals are 10,000-replicate paired row bootstraps using observed discordance categories; they quantify sampling uncertainty on the frozen source-label test partition, not seed uncertainty.
