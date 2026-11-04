@@ -1,0 +1,233 @@
+{
+  "counts": {
+    "source_frozen_test_N": 9489,
+    "audit_N": 360,
+    "matched_on_ID_and_hash": 360,
+    "eligible_strict_binary_N": 317,
+    "eligible_real": 223,
+    "eligible_fake": 94,
+    "random_panel_N": 300,
+    "random_strict_eligible_N": 266,
+    "targeted_panel_N": 60,
+    "targeted_strict_eligible_N": 51,
+    "consensus_strict_binary_N": 303,
+    "author_approved_adjudicated_binary_N": 14,
+    "strict_eligible_flips_vs_source_N": 73,
+    "old_source_class_counts_eligible": {
+      "0": 154,
+      "1": 163
+    },
+    "new_class_counts_eligible": {
+      "0": 223,
+      "1": 94
+    },
+    "excluded_and_held_N": 43,
+    "eligible_exact_overlap_flag_count": 1,
+    "eligible_near_candidate_flag_count": 4,
+    "audit_exact_overlap_flag_count": 1,
+    "audit_near_candidate_flag_count": 4,
+    "full_test_exact_overlap_reported": 48,
+    "full_test_near_candidate_reported": 174,
+    "train_val_test_sha_match": true,
+    "all_6_frozen_run_predictions_match_fulltest_file": true,
+    "all_360_annotator_labels_match_prior_independent_files": true,
+    "selection_limitation": "300 original-label-stratified random + 60 targeted error cases; eligible counts are conditional on adjudication gate",
+    "leakage_limitation": "Original training contains overlaps; post-hoc flags/exclusion do not produce clean training or leakage-free performance",
+    "adjudication_limitation": "57 cases approved by author following AI-assisted proposal, 14 of those eligible binary; no blind independent third fact-check is claimed",
+    "use_scope": "Descriptive paired sensitivity on the same frozen predictions; not corrected-label full test and not leakage-free test performance"
+  },
+  "provenance": {
+    "inputs_sha256": {
+      "TALLIP_FN_360_Reviewer_Ready_Annotation_Audit_2026-11-04.xlsx": "bfa1715b2a18e83d3fa14328d08862cd1c28fa401f0d65a9bd4b67a1ba70c93a",
+      "TALLIP_Human_Label_Sensitivity_12Runs_2026-11-01(2).zip": "5343cf5254f0e03b4d9fbf7c9f652daa8b88a36e1de4809265b7b19cc3d52c1d",
+      "TALLIP_FullTest_Length_Source_Control_12Runs_2026-11-01(3).zip": "c060baef56f126e6251c978523016012bcda57414f503caebce2468cded04811",
+      "TALLIP_26-0521_FourIssue_Evidence_RESULTS(1).zip": "1382279a8a042ea0f161683ad5b1dc405ba00650e971c40df043e3db60a3ac09"
+    },
+    "source_predictions_manifest": {
+      "report_scope": "conditional sensitivity on unambiguous human consensus; not corrected test-set performance",
+      "source_label_encoding": {
+        "fakenews": {
+          "0": "REAL",
+          "1": "FAKE"
+        },
+        "hatespeech": {
+          "0": "NON_HATE",
+          "1": "HATE"
+        }
+      },
+      "source_archives_sha256": {
+        "TALLIP_Stage1_Audit_and_Blind_Label_Verification_Kit.zip": "ad165935120c60851822dda7d68d9db096f3cc2ae0a1faee34fd3b36b12c01f3",
+        "Neloy_Annotation(5).xlsx": "a77233caff104cdd9b52eda137018892f06655fb1214284a932b16b5caa70ebf",
+        "Sajib_Annotation(5).xlsx": "00ea1b73b303fac5be4a4d38f47b01b9887d58ad2205faa697b07e7a4d514d8e",
+        "ThirdPerson_Independent_HateSpeech_All240_Annotated_2026-10-31(1).xlsx": "ff75d24f98c99d34cf504e20ac7214263711121b43dec0e998a0553151f2dd9c",
+        "Neloy_FakeNews_360_Final_Binary_2026-11-01.xlsx": "4e40919a7beba9a15b656a816ef0079efc12a17fe919a5b4b4fc15fe1a416275",
+        "TALLIP_Seed42_Results_ONLY.zip": "ba8d3e3de4037de5444d0270ef0c7edb711d438a639a6f8d7227a7c138f22475",
+        "TALLIP_fakenews_banglabert_seed_52_evidence.zip": "46635fb90a1a83f11d682396a96f744eccde697c0787526c48a3e7bd0bc77789",
+        "TALLIP_fakenews_banglabert_seed_62_evidence.zip": "4c42e285b37b0956bd92e91ebc7954aec7bf530e5f0f871b06aa1b5041e7c64d",
+        "TALLIP_FakeNews_mBERT_Seed42_Results.zip": "397183db37c70178e70ccb094f2f8920ae8f23d72e8319b3265f57900273b873",
+        "TALLIP_FakeNews_mBERT_Seed52_Results.zip": "9e81438036289c8b1e30a27cd7b7aa9c7bcd9614c721cea0febd80070af75a4b",
+        "TALLIP_FakeNews_mBERT_Seed62_Results.zip": "be08a2c8f823109bbc18b20de0e12ddf85ec2f0105d50a2082b5511edfe17c8d",
+        "TALLIP_HateSpeech_BanglaBERT_Seed42_Results.zip": "e9c0105230559471d0d24e4a7ee42f2058c5af4041124dcfd7a3574999ecaac2",
+        "TALLIP_HateSpeech_BanglaBERT_Seed52_Results.zip": "ec48cc9d4a7be3683877af1d65058207d5ede52834822fc349a02a13585a1ace",
+        "TALLIP_HateSpeech_BanglaBERT_Seed62_Results.zip": "d894eedbe7ea7c44ca083730d4d623ed67be0c36693af93e164ec256238e2fe1",
+        "TALLIP_HateSpeech_mBERT_3Seeds_Results.zip": "4eac13299125984c346c5787d6255ea1d81c0e02fca94a467d77efeb75d12434"
+      },
+      "all_twelve_runs_test_row_id_and_y_true_match": true,
+      "all_manifest_ids_text_sha_and_source_labels_match": true,
+      "dataset_counts": {
+        "fakenews": {
+          "total": 360,
+          "panel_counts": {
+            "random_stratified": 300,
+            "targeted_false_negative": 30,
+            "targeted_false_positive": 30
+          },
+          "neloy_sajib_binary_consensus_count": 303,
+          "candidate_source_label_disagreement_count": 68,
+          "unaligned_ids_or_text_hashes": 0,
+          "later_neloy_binary_changed_vs_independent": 0
+        },
+        "hatespeech": {
+          "total": 240,
+          "panel_counts": {
+            "targeted_false_positive": 20,
+            "random_stratified": 200,
+            "targeted_false_negative": 20
+          },
+          "neloy_sajib_binary_consensus_count": 227,
+          "candidate_source_label_disagreement_count": 34,
+          "unaligned_ids_or_text_hashes": 0,
+          "later_neloy_binary_changed_vs_independent": 0,
+          "three_annotator_binary_unanimous": 206
+        }
+      },
+      "bootstrap_replicates": 2000,
+      "authoritative_manifest": "TALLIP_Stage1_Audit_and_Blind_Label_Verification_Kit.zip",
+      "annotator_sources": {
+        "neloy": "Neloy_Annotation(5).xlsx",
+        "sajib": "Sajib_Annotation(5).xlsx",
+        "third": "ThirdPerson_Independent_HateSpeech_All240_Annotated_2026-10-31(1).xlsx",
+        "neloy_later_binary": "Neloy_FakeNews_360_Final_Binary_2026-11-01.xlsx"
+      },
+      "three_annotator_hate_consensus_rule": "all three exactly binary HATE/NON_HATE and agree",
+      "sample_weights_note": "Horvitz-Thompson-type inverse-inclusion weights only for random_stratified. Nonresponse/ambiguous-label exclusion may bias these exploratory estimates.",
+      "review_status": "No new adjudication of contested or ambiguous items performed; all candidates remain candidates."
+    },
+    "leakage_report": {
+      "method": "NFKC casefold remove punctuation/symbols/format whitespace collapse",
+      "task": "fakenews",
+      "test_earlier_rows": 48,
+      "test_earlier_ids": [
+        139,
+        341,
+        527,
+        737,
+        805,
+        808,
+        1144,
+        1215,
+        1601,
+        2024,
+        2262,
+        2678,
+        3360,
+        3539,
+        3635,
+        3803,
+        3820,
+        3847,
+        3864,
+        3930,
+        4398,
+        4724,
+        4831,
+        4860,
+        5219,
+        5273,
+        5503,
+        6071,
+        6363,
+        6366,
+        6592,
+        6594,
+        6607,
+        7044,
+        7250,
+        7525,
+        7680,
+        7723,
+        7824,
+        7861,
+        7929,
+        8079,
+        8132,
+        8157,
+        8159,
+        8891,
+        8901,
+        9216
+      ],
+      "val_train_rows": 36,
+      "val_train_ids": [
+        350,
+        358,
+        574,
+        800,
+        985,
+        1081,
+        1202,
+        1233,
+        1944,
+        2059,
+        2201,
+        2233,
+        2412,
+        2580,
+        2633,
+        3514,
+        3596,
+        3759,
+        4116,
+        4596,
+        5405,
+        5481,
+        5681,
+        5774,
+        6400,
+        6591,
+        6784,
+        6798,
+        7421,
+        7761,
+        8164,
+        8839,
+        8949,
+        9010,
+        9063,
+        9482
+      ],
+      "unique_train_test": 38,
+      "unique_val_test": 10,
+      "proposed_train_exclusions": 75,
+      "proposed_val_exclusions": 10,
+      "new_models_must_be_retrained_from_base_to_claim_clean_training": true,
+      "interpretation": "post-hoc detection; NOT a leakage-free test or retraining"
+    },
+    "near_duplicate_screen": {
+      "method": "64-bit word-shingle SimHash 4x16 bands then actual Jaccard",
+      "not_exhaustive": true,
+      "threshold": 0.8,
+      "skipped_saturated_test_rows": 0,
+      "raw_pairs": 180,
+      "affected_test_ids": 174,
+      "warning": "candidate pairs are NOT confirmed duplicate labels; screen may miss near matches"
+    },
+    "algorithm": "frozen prediction alignment, human-approved binary gating, weighted random stratum sensitivity with 2000 stratified bootstraps",
+    "label_map": {
+      "REAL": 0,
+      "FAKE": 1
+    },
+    "generated_utc_date": "2026-11-04",
+    "note": "No retraining, no new manual fact-check; no raw article content copied to this new evaluation workbook."
+  }
+}
