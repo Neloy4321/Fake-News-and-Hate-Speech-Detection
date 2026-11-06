@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "cases_completed": 12,
+  "expected": 12,
+  "all_articles_token_covered": true,
+  "article_level_shap_lime": true,
+  "training_performed": false,
+  "claim_boundary": "Derived whole-article aggregator; NOT the original 256-token classifier.",
+  "completed_utc": "2026-11-03T06:41:52.428704+00:00"
+}

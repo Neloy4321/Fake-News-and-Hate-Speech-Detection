@@ -1,0 +1,24 @@
+{
+  "run_finished": true,
+  "fakenews_xai_cases": 20,
+  "hatespeech_xai_cases": 20,
+  "faithfulness_rows": 320,
+  "ig_rechecks_total": 4,
+  "ig_converged_count": 4,
+  "ig_not_converged_rows": [],
+  "reviewer_scope_note": "20+20 predeclared cases, model-visible windows, original labels; NOT full article or leakage-free generalization",
+  "all_40_shap_lime_completed": true,
+  "all_4_IG_converged": true,
+  "new_sliding_window_long_article_audit": {
+    "articles": 4,
+    "windows": 8,
+    "all_selected_original_subwords_covered": true,
+    "novel_derived_system_not_original_model": true
+  },
+  "restricted_human_consensus_sensitivity": {
+    "fakenews": 259,
+    "hatespeech": 192
+  },
+  "full_corrected_gold_available": false,
+  "leakage_free_evaluation_claim_permitted": false
+}

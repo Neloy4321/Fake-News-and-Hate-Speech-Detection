@@ -1,0 +1,60 @@
+{
+  "task": "fakenews",
+  "total_human_audited": 360,
+  "eligible_random_stratified_strict_binary_consensus": 259,
+  "source_label": {
+    "accuracy_weighted": 0.9297465026804185,
+    "macro_f1_weighted": 0.9212805322275738,
+    "confusion_unweighted_0_1": [
+      [
+        122,
+        5
+      ],
+      [
+        17,
+        115
+      ]
+    ],
+    "confusion_weighted_0_1": [
+      [
+        5119.1200000000035,
+        209.8
+      ],
+      [
+        362.1000000000001,
+        2449.5000000000005
+      ]
+    ]
+  },
+  "human_consensus_subset": {
+    "accuracy_weighted": 0.8852653147464781,
+    "macro_f1_weighted": 0.8551192047630679,
+    "confusion_unweighted_0_1": [
+      [
+        138,
+        38
+      ],
+      [
+        1,
+        82
+      ]
+    ],
+    "confusion_weighted_0_1": [
+      [
+        5459.9200000000055,
+        912.6999999999996
+      ],
+      [
+        21.3,
+        1746.5999999999976
+      ]
+    ]
+  },
+  "human_minus_source_accuracy_pp": -4.44811879339404,
+  "delta_bootstrap_stratified_95_CI_pp": [
+    -8.111275446777356,
+    -1.0466161866809376
+  ],
+  "all_panel_source_disagreement_candidates": 68,
+  "warning": "Human consensus is a bounded audited-subset reference, NOT full-test adjudicated gold. Targeted error-enriched cases excluded from random-panel estimate."
+}

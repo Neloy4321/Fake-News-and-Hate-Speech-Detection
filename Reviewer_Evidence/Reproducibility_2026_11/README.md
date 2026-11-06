@@ -38,9 +38,14 @@ The other five P2 outcomes were supplied in separate evidence forms during the r
 
 The annotation and corrected-label evidence described in the [supplementary tables](Manuscript_Assets/Tables/Supplementary/) is limited to reviewed cohorts; it is not a full corrected test-label gold standard. Human post-discussion agreement must not be represented as independent blind initial-pass reliability.
 
+For Table 7, the [Fake News](Label_Sensitivity/fakenews_human_consensus_sensitivity.json) and [Hate Speech](Label_Sensitivity/hatespeech_human_consensus_sensitivity.json) JSON files contain aggregate, weighted label-sensitivity results for the eligible random-panel subsets (259 and 192 items, respectively).
+
 ## 4. Explanation checks
 
 [Explainability](Explainability/) includes four-case IG convergence, sampled faithfulness bootstrap summary, checkpoint-selection metadata and the 12-article full-article auxiliary summary. These are **sample-restricted** analyses. The Option B sliding-window system is not the original 256-subword classifier running natively on entire documents. P1 prediction checkpoints and separate XAI checkpoints/tokenizers have not been proven byte-identical.
+
+- [Option B numerical records](Explainability/OptionB_12_Articles/) accompany Table 10 and Figures 7–8. The 12 case rows comprise 27 sliding windows and one prediction change relative to first-window inference. The archived per-case perturbation metrics, bootstrap summary and configuration are included.
+- [Model-visible window numerical records](Explainability/Model_Visible_Windows/) accompany Table 9 and Supplementary Table S3. The numeric CSV contains 320 task/case/method/k rows across 20 selected examples per task. It was exported from the archived per-case CSV using an allowlist of fields that excludes selected words and token positions. The completion JSON describes this separate archive, including its distinct four-article auxiliary audit.
 
 ## 5. Manuscript assets
 

@@ -1,0 +1,60 @@
+{
+  "task": "hatespeech",
+  "total_human_audited": 240,
+  "eligible_random_stratified_strict_binary_consensus": 192,
+  "source_label": {
+    "accuracy_weighted": 0.9486699309197769,
+    "macro_f1_weighted": 0.9486331785256482,
+    "confusion_unweighted_0_1": [
+      [
+        90,
+        3
+      ],
+      [
+        7,
+        92
+      ]
+    ],
+    "confusion_weighted_0_1": [
+      [
+        2351.7000000000053,
+        78.39
+      ],
+      [
+        169.12,
+        2222.720000000002
+      ]
+    ]
+  },
+  "human_consensus_subset": {
+    "accuracy_weighted": 0.8677936013173148,
+    "macro_f1_weighted": 0.8675359041290469,
+    "confusion_unweighted_0_1": [
+      [
+        76,
+        4
+      ],
+      [
+        21,
+        91
+      ]
+    ],
+    "confusion_weighted_0_1": [
+      [
+        1985.880000000004,
+        102.55
+      ],
+      [
+        534.94,
+        2198.560000000002
+      ]
+    ]
+  },
+  "human_minus_source_accuracy_pp": -8.087632960246216,
+  "delta_bootstrap_stratified_95_CI_pp": [
+    -11.840072336180752,
+    -4.33519358431168
+  ],
+  "all_panel_source_disagreement_candidates": 34,
+  "warning": "Human consensus is a bounded audited-subset reference, NOT full-test adjudicated gold. Targeted error-enriched cases excluded from random-panel estimate."
+}
