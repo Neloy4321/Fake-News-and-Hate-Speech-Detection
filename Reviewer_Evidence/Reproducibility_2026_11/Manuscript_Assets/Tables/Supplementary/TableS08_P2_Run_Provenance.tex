@@ -1,0 +1,40 @@
+\begin{table}[p]
+\centering
+\caption{P2 V1 run-specific provenance for seven CUDA runs recovered
+from a single audited 30-hour-account evidence export.}
+\label{tab:p2runmanifest}
+\scriptsize
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llrrll}
+\toprule
+Task & Encoder & Seed & Best epoch & Lane & Checkpoint safetensors SHA-256 \\
+\midrule
+FN & mBERT & 42 & 3 & 0 & \texttt{b42e07db7eb91e214b8faeb8550cb2f9bdac286d515cfbefe54d8e160168085f} \\
+FN & mBERT & 52 & 3 & 1 & \texttt{6d9d2bd5bce35808b04bec5b96ba91631a3f3a5f78f00f8907922860c341a983} \\
+FN & mBERT & 62 & 3 & 1 & \texttt{bcddd927e156999639117b2739723518b873870cbb9447dd104b22f2ca99f485} \\
+HS & BanglaBERT & 62 & 2 & 0 & \texttt{604c5cae1111681c9c1c338c45f7b6f81a391b97ac48a64244d7094d32d6b2b5} \\
+HS & mBERT & 42 & 3 & 0 & \texttt{f18cf72568c52170e6ddf43d12676b7c8199db0212470b86799c794d879675d8} \\
+HS & mBERT & 52 & 3 & 0 & \texttt{3095e55a82c0ff1b9f11434e6063fd7eb972d692104940a0fc658c62c2e88bed} \\
+HS & mBERT & 62 & 3 & 1 & \texttt{bb99fc725ccfc139d83b8876907ffa591fe9fcb0178fdfbd31d5559d40824efb} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+
+\par\smallskip
+\begin{minipage}{0.98\linewidth}\scriptsize
+\emph{Evidence boundary.} Each above run has a unique
+\texttt{training/lane\_N/<task>/<encoder>/seed\_<n>/done.json},
+\texttt{training\_history.json} and \texttt{fixed\_test\_predictions.csv}
+in the author's seven-run export; their declared manifest digest was
+\texttt{0b8104b02faccac1cccc492157ab42dcfd155cf01098830359bbd58241d5a83a}.
+The seven prediction files were checked for row counts, probability
+validity and label argmax consistency. The checkpoint hashes above are
+\emph{declared inside} the saved run metadata; model weight bytes were
+excluded from this lightweight export, so the hashes were not recomputed
+against the original safetensors. The remaining five P2 V1 results
+(FN BanglaBERT seeds 42/52/62, HS BanglaBERT seeds 42/52) were supplied
+as separately reported evidence and cannot be given equivalent
+\texttt{done.json}-to-checkpoint provenance from this seven-run archive.
+No tokenizer-hash equality across P1 and XAI is inferred.
+\end{minipage}
+\end{table}

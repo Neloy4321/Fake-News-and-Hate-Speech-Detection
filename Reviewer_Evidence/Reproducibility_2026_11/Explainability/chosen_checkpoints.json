@@ -1,0 +1,8 @@
+{
+  "chosen": {
+    "fakenews": "/kaggle/input/datasets/neloypramanik4444/tallip-checkpoint/real_runs/fakenews/banglabert/seed_42/model",
+    "hatespeech": "/kaggle/input/datasets/neloypramanik4444/tallip-checkpoint/real_runs/hatespeech/banglabert/seed_42/model"
+  },
+  "assignment": "directory-name/hint only; no anchor verification",
+  "checkpoint_scores_not_compared_to_earlier_runs": true
+}

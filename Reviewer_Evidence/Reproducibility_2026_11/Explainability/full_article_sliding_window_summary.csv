@@ -1,0 +1,5 @@
+﻿test_row_id,original_label,full_original_subwords,window_count,coverage_fraction,aggregate_predicted_class,aggregate_class1_probability,first_window_class1_probability,checkpoint_sha256,system_definition
+9204,0,266,2,1.0,0,0.0009750376921147108,0.000981353921815753,900faf67ebc94d5e4eb657ff7998427efb05c0e198164dd062d8d288aab01d20,"new mean-probability sliding-window aggregator, NOT submitted first-window classifier"
+1320,0,273,2,1.0,0,0.05571771785616875,0.11092841625213623,900faf67ebc94d5e4eb657ff7998427efb05c0e198164dd062d8d288aab01d20,"new mean-probability sliding-window aggregator, NOT submitted first-window classifier"
+636,1,277,2,1.0,1,0.999811589717865,0.9998143315315247,900faf67ebc94d5e4eb657ff7998427efb05c0e198164dd062d8d288aab01d20,"new mean-probability sliding-window aggregator, NOT submitted first-window classifier"
+4302,0,304,2,1.0,1,0.5095402598381042,0.0501125194132328,900faf67ebc94d5e4eb657ff7998427efb05c0e198164dd062d8d288aab01d20,"new mean-probability sliding-window aggregator, NOT submitted first-window classifier"

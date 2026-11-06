@@ -1,0 +1,9 @@
+{
+  "method": "64-bit word-shingle SimHash 4x16 bands then actual Jaccard",
+  "not_exhaustive": true,
+  "threshold": 0.85,
+  "skipped_saturated_test_rows": 0,
+  "raw_pairs": 48,
+  "affected_test_ids": 37,
+  "warning": "candidate pairs are NOT confirmed duplicate labels; screen may miss near matches"
+}

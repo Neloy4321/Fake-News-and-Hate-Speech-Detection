@@ -1,0 +1,27 @@
+{
+  "task": "fakenews",
+  "model": "bert-base-multilingual-cased",
+  "model_key": "mbert",
+  "seed": 52,
+  "max_length": 256,
+  "epochs": 3,
+  "train_batch_size": 16,
+  "lr": 5e-05,
+  "warmup_steps": 500,
+  "class_weighted": false,
+  "best_epoch": 3,
+  "best_validation_macro_f1": 0.8303622384343704,
+  "test": {
+    "accuracy": 0.8573084624301823,
+    "macro_precision": 0.8546951538267924,
+    "macro_recall": 0.8188508766826145,
+    "macro_f1": 0.8324497285520208
+  },
+  "elapsed_seconds": 5096.49,
+  "gpu": "Tesla T4",
+  "torch_version": "2.11.0+cu128",
+  "normalizer": "bangla",
+  "experimental_only": false,
+  "truncation_note": "Only first 256 subword tokens processed; full article not explained.",
+  "labels_source": "published dataset CSV labels; not independently human re-annotated"
+}

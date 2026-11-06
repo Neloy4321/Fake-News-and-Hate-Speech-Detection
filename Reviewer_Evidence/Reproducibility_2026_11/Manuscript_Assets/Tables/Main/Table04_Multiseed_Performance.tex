@@ -1,0 +1,24 @@
+% Revision table Table04. Requires \usepackage{booktabs,adjustbox}.
+\begin{table}[H]
+\centering
+\caption{Original-label held-out test performance of two encoders across three training seeds (mean $\pm$ sample standard deviation).}
+\label{tab:main}
+\footnotesize
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lccccccc}
+\toprule
+Task & Model & n test & Accuracy (\%) & Macro P (\%) & Macro R (\%) & Macro F1 (\%) & ROC AUC (\%) \\
+\midrule
+Fake News & BanglaBERT & 9,489 & 91.910 $\pm$ 0.122 & 91.649 $\pm$ 0.114 & 90.054 $\pm$ 0.254 & 90.773 $\pm$ 0.159 & 96.885 $\pm$ 0.118 \\
+Fake News & mBERT & 9,489 & 84.547 $\pm$ 1.037 & 83.875 $\pm$ 1.389 & 80.700 $\pm$ 1.050 & 81.919 $\pm$ 1.166 & 89.992 $\pm$ 1.815 \\
+Hate Speech & BanglaBERT & 5,029 & 92.663 $\pm$ 0.259 & 92.686 $\pm$ 0.247 & 92.711 $\pm$ 0.188 & 92.657 $\pm$ 0.251 & 97.459 $\pm$ 0.208 \\
+Hate Speech & mBERT & 5,029 & 90.873 $\pm$ 0.439 & 90.858 $\pm$ 0.442 & 90.861 $\pm$ 0.435 & 90.859 $\pm$ 0.439 & 96.194 $\pm$ 0.320 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\vspace{2pt}
+\begin{minipage}{\linewidth}
+\scriptsize\emph{Note.} These are source-label measurements on archived test partitions; mean $\pm$ sample SD is computed across three seeds and is not a row-bootstrap confidence interval. Single-seed classical baselines from the original paper are not treated as new multi-seed runs.
+\end{minipage}
+\end{table}
+

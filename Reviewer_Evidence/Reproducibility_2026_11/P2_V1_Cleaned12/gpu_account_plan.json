@@ -1,0 +1,32 @@
+{
+  "account": "30h",
+  "lanes": [
+    [
+      "hatespeech/banglabert/seed_62",
+      "hatespeech/mbert/seed_42",
+      "hatespeech/mbert/seed_52",
+      "fakenews/mbert/seed_42"
+    ],
+    [
+      "hatespeech/mbert/seed_62",
+      "fakenews/mbert/seed_52",
+      "fakenews/mbert/seed_62"
+    ]
+  ],
+  "selected_runs": [
+    "hatespeech/banglabert/seed_62",
+    "hatespeech/mbert/seed_42",
+    "hatespeech/mbert/seed_52",
+    "fakenews/mbert/seed_42",
+    "hatespeech/mbert/seed_62",
+    "fakenews/mbert/seed_52",
+    "fakenews/mbert/seed_62"
+  ],
+  "other_account_runs": [
+    "hatespeech/banglabert/seed_42",
+    "hatespeech/banglabert/seed_52"
+  ],
+  "manifest_sha256": "0b8104b02faccac1cccc492157ab42dcfd155cf01098830359bbd58241d5a83a",
+  "max_hours_this_session": 9.5,
+  "two_gpu_parallel": "automatic if CUDA device_count >= 2"
+}

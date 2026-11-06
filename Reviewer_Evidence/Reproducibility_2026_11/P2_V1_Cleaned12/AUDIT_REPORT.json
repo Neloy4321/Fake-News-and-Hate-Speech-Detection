@@ -1,0 +1,241 @@
+{
+  "project": "ACM TALLIP-26-0521",
+  "experiment": "30-hour account, exact seven clean-split full CUDA runs",
+  "generated_utc": "2026-11-05T19:55:21.210875+00:00",
+  "source_training_directory": "/kaggle/input/datasets/neloypramanik4444/kaggle-gpu-account-30h-7-runs/TALLIP_GPU_Account_30H/training",
+  "manifest_sha256": "0b8104b02faccac1cccc492157ab42dcfd155cf01098830359bbd58241d5a83a",
+  "expected_runs": [
+    "hatespeech/banglabert/seed_62",
+    "hatespeech/mbert/seed_42",
+    "hatespeech/mbert/seed_52",
+    "fakenews/mbert/seed_42",
+    "hatespeech/mbert/seed_62",
+    "fakenews/mbert/seed_52",
+    "fakenews/mbert/seed_62"
+  ],
+  "run_count": 7,
+  "runs_with_no_issues": 7,
+  "audit_pass": true,
+  "issues": [],
+  "runs": [
+    {
+      "run": "hatespeech/banglabert/seed_62",
+      "lane": 0,
+      "checks": [
+        "Only lightweight research evidence is packaged; model weights excluded"
+      ],
+      "issues": [],
+      "prediction_checks": {
+        "rows": 5029,
+        "bad_probability_rows": 0,
+        "bad_argmax_rows": 0
+      },
+      "recomputed_test": {
+        "accuracy": 0.9232451779677868,
+        "macro_precision": 0.9230444622468925,
+        "macro_recall": 0.9235952972022212,
+        "macro_f1": 0.9231881738861776,
+        "confusion_matrix_labels_0_1": [
+          [
+            2390,
+            223
+          ],
+          [
+            163,
+            2253
+          ]
+        ]
+      },
+      "best_checkpoint_declared_sha256": "604c5cae1111681c9c1c338c45f7b6f81a391b97ac48a64244d7094d32d6b2b5",
+      "best_checkpoint_weights_in_zip": false
+    },
+    {
+      "run": "hatespeech/mbert/seed_42",
+      "lane": 0,
+      "checks": [
+        "Only lightweight research evidence is packaged; model weights excluded"
+      ],
+      "issues": [],
+      "prediction_checks": {
+        "rows": 5029,
+        "bad_probability_rows": 0,
+        "bad_argmax_rows": 0
+      },
+      "recomputed_test": {
+        "accuracy": 0.9196659375621395,
+        "macro_precision": 0.9194643825535165,
+        "macro_recall": 0.9200105559821878,
+        "macro_f1": 0.9196062752591082,
+        "confusion_matrix_labels_0_1": [
+          [
+            2381,
+            232
+          ],
+          [
+            172,
+            2244
+          ]
+        ]
+      },
+      "best_checkpoint_declared_sha256": "f18cf72568c52170e6ddf43d12676b7c8199db0212470b86799c794d879675d8",
+      "best_checkpoint_weights_in_zip": false
+    },
+    {
+      "run": "hatespeech/mbert/seed_52",
+      "lane": 0,
+      "checks": [
+        "Only lightweight research evidence is packaged; model weights excluded"
+      ],
+      "issues": [],
+      "prediction_checks": {
+        "rows": 5029,
+        "bad_probability_rows": 0,
+        "bad_argmax_rows": 0
+      },
+      "recomputed_test": {
+        "accuracy": 0.9192682441837343,
+        "macro_precision": 0.9190419740396845,
+        "macro_recall": 0.9195030324688327,
+        "macro_f1": 0.9191953946566493,
+        "confusion_matrix_labels_0_1": [
+          [
+            2387,
+            226
+          ],
+          [
+            180,
+            2236
+          ]
+        ]
+      },
+      "best_checkpoint_declared_sha256": "3095e55a82c0ff1b9f11434e6063fd7eb972d692104940a0fc658c62c2e88bed",
+      "best_checkpoint_weights_in_zip": false
+    },
+    {
+      "run": "fakenews/mbert/seed_42",
+      "lane": 0,
+      "checks": [
+        "Only lightweight research evidence is packaged; model weights excluded"
+      ],
+      "issues": [],
+      "prediction_checks": {
+        "rows": 9489,
+        "bad_probability_rows": 0,
+        "bad_argmax_rows": 0
+      },
+      "recomputed_test": {
+        "accuracy": 0.8471914848772263,
+        "macro_precision": 0.8341028582303525,
+        "macro_recall": 0.817774137676392,
+        "macro_f1": 0.8248499792504181,
+        "confusion_matrix_labels_0_1": [
+          [
+            5714,
+            580
+          ],
+          [
+            870,
+            2325
+          ]
+        ]
+      },
+      "best_checkpoint_declared_sha256": "b42e07db7eb91e214b8faeb8550cb2f9bdac286d515cfbefe54d8e160168085f",
+      "best_checkpoint_weights_in_zip": false
+    },
+    {
+      "run": "hatespeech/mbert/seed_62",
+      "lane": 1,
+      "checks": [
+        "Only lightweight research evidence is packaged; model weights excluded"
+      ],
+      "issues": [],
+      "prediction_checks": {
+        "rows": 5029,
+        "bad_probability_rows": 0,
+        "bad_argmax_rows": 0
+      },
+      "recomputed_test": {
+        "accuracy": 0.9174786239809107,
+        "macro_precision": 0.9173143303478639,
+        "macro_recall": 0.9179056956683724,
+        "macro_f1": 0.917426789710688,
+        "confusion_matrix_labels_0_1": [
+          [
+            2370,
+            243
+          ],
+          [
+            172,
+            2244
+          ]
+        ]
+      },
+      "best_checkpoint_declared_sha256": "bb99fc725ccfc139d83b8876907ffa591fe9fcb0178fdfbd31d5559d40824efb",
+      "best_checkpoint_weights_in_zip": false
+    },
+    {
+      "run": "fakenews/mbert/seed_52",
+      "lane": 1,
+      "checks": [
+        "Only lightweight research evidence is packaged; model weights excluded"
+      ],
+      "issues": [],
+      "prediction_checks": {
+        "rows": 9489,
+        "bad_probability_rows": 0,
+        "bad_argmax_rows": 0
+      },
+      "recomputed_test": {
+        "accuracy": 0.865844662240489,
+        "macro_precision": 0.8654517189175592,
+        "macro_recall": 0.8282906740304128,
+        "macro_f1": 0.8424279642422334,
+        "confusion_matrix_labels_0_1": [
+          [
+            5937,
+            357
+          ],
+          [
+            916,
+            2279
+          ]
+        ]
+      },
+      "best_checkpoint_declared_sha256": "6d9d2bd5bce35808b04bec5b96ba91631a3f3a5f78f00f8907922860c341a983",
+      "best_checkpoint_weights_in_zip": false
+    },
+    {
+      "run": "fakenews/mbert/seed_62",
+      "lane": 1,
+      "checks": [
+        "Only lightweight research evidence is packaged; model weights excluded"
+      ],
+      "issues": [],
+      "prediction_checks": {
+        "rows": 9489,
+        "bad_probability_rows": 0,
+        "bad_argmax_rows": 0
+      },
+      "recomputed_test": {
+        "accuracy": 0.8636315734007799,
+        "macro_precision": 0.8605620939338918,
+        "macro_recall": 0.8278552791167085,
+        "macro_f1": 0.8406288441771816,
+        "confusion_matrix_labels_0_1": [
+          [
+            5900,
+            394
+          ],
+          [
+            900,
+            2295
+          ]
+        ]
+      },
+      "best_checkpoint_declared_sha256": "bcddd927e156999639117b2739723518b873870cbb9447dd104b22f2ca99f485",
+      "best_checkpoint_weights_in_zip": false
+    }
+  ],
+  "model_weights_included": false,
+  "note": "This ZIP verifies saved metrics/predictions; physical model.safetensors hashes not rechecked because weights are excluded."
+}

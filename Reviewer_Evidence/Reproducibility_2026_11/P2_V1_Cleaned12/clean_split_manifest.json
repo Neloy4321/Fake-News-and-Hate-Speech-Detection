@@ -1,0 +1,224 @@
+{
+  "experiment": "TALLIP-26-0521 leakage-controlled base-model retraining",
+  "stage": "SPLIT_PREPARATION_VERIFIED__GPU_TRAINING_PENDING",
+  "fixed_test_priority": true,
+  "original_test_unchanged": true,
+  "overlap_evidence_archive_sha256": "16a833f0ba64327bf261e234265b5bcedf1a9dab41bef82c0dea0ce17939556c",
+  "tasks": {
+    "fakenews": {
+      "task": "fakenews",
+      "source_zip_name": "fakenews_original_input.zip",
+      "source_zip_sha256": "8053d925d944b5554faa2e1c9743afd5607299d754a83c6ade3a5d1e59c13d6a",
+      "evidence_zip_near_method": "prior SimHash banded candidate screen; not exhaustive",
+      "near_jaccard_threshold": 0.8,
+      "near_candidates_test_pairs_validated": 180,
+      "near_pair_score_discrepancy_count": 0,
+      "near_pair_score_discrepancies": [],
+      "original_rows": {
+        "train": 75905,
+        "val": 9489,
+        "test": 9489
+      },
+      "clean_rows": {
+        "train": 75711,
+        "val": 9467,
+        "test": 9489
+      },
+      "cleaned_csv_gzip_sha256": {
+        "train": "5ffc8bb11edbfb327c5eae0b3f794d5d8a1fccc292f78dbd04857a3132f64539",
+        "val": "d1c28b0aa8e38536bb0166ac13338887b786e04202d0fff76d55e6681f545820",
+        "test": "c72fb82b2d8fb2de45488244e1b9cd0e4502d038088f1ec5a494c108ed57578b"
+      },
+      "deleted_row_counts": {
+        "train": 194,
+        "val": 22
+      },
+      "deleted_reason_counts": {
+        "train": {
+          "known_test_near_candidate": 157,
+          "exact_in_test": 38,
+          "exact_in_validation": 34,
+          "prior_exclusion_not_independently_exact": 3
+        },
+        "val": {
+          "known_test_near_candidate": 22,
+          "exact_in_test": 10
+        }
+      },
+      "original_exact_overlap_distinct_text_counts": {
+        "train_val_unique_normalized_texts": 33,
+        "train_test_unique_normalized_texts": 38,
+        "val_test_unique_normalized_texts": 10
+      },
+      "empty_normalized_rows_by_split": {
+        "train": 0,
+        "val": 0,
+        "test": 0
+      },
+      "prior_evidence_exclusion_crosscheck": {
+        "train": {
+          "prior_exclusion_rows": 75,
+          "independent_exact_exclusion_rows": 72,
+          "prior_only_row_ids_not_independently_exact": [
+            22799,
+            35758,
+            64621
+          ]
+        },
+        "val": {
+          "prior_exclusion_rows": 10,
+          "independent_exact_exclusion_rows": 10,
+          "prior_only_row_ids_not_independently_exact": []
+        }
+      },
+      "post_clean_exact_cross_split_overlap": 0,
+      "known_near_test_candidate_training_or_validation_rows_remaining": 0,
+      "fixed_original_test_text_digest_sha256": "cb0d84d405ee80f2e51a466d8e3f2f3f7aef4cbbc29758dc40e3f88f91bdb106",
+      "fixed_test_original_label_distribution": {
+        "0": 6294,
+        "1": 3195
+      },
+      "clean_label_distribution": {
+        "train": {
+          "0": 50253,
+          "1": 25458
+        },
+        "val": {
+          "0": 6284,
+          "1": 3183
+        },
+        "test": {
+          "0": 6294,
+          "1": 3195
+        }
+      },
+      "scientific_limits": [
+        "Exact disjointness was verified using NFKC/casefold/punctuation-symbol-control removal.",
+        "Known near-duplicate pairs to test were removed from prior train and validation rows.",
+        "The near-duplicate screen is approximate/non-exhaustive; unobserved near matches may remain.",
+        "The original test labels were retained; labels were not independently audited for every item.",
+        "New evaluation metrics require fresh base-model training on this cleaned training set."
+      ]
+    },
+    "hatespeech": {
+      "task": "hatespeech",
+      "source_zip_name": "hatespeech_original_input.zip",
+      "source_zip_sha256": "2a7c5dc5100685cafcaaec5d71185daa24b8c52e7df4ccab2775cf1604ebeb2b",
+      "evidence_zip_near_method": "prior SimHash banded candidate screen; not exhaustive",
+      "near_jaccard_threshold": 0.85,
+      "near_candidates_test_pairs_validated": 48,
+      "near_pair_score_discrepancy_count": 3,
+      "near_pair_score_discrepancies": [
+        {
+          "test_row_id": 1322,
+          "earlier_split": "train",
+          "earlier_local_row_id": 7011,
+          "prior_jaccard": 1.0,
+          "raw_csv_rescore_jaccard": 0.1111111111111111
+        },
+        {
+          "test_row_id": 2063,
+          "earlier_split": "train",
+          "earlier_local_row_id": 13834,
+          "prior_jaccard": 1.0,
+          "raw_csv_rescore_jaccard": 0.0
+        },
+        {
+          "test_row_id": 2796,
+          "earlier_split": "train",
+          "earlier_local_row_id": 6485,
+          "prior_jaccard": 1.0,
+          "raw_csv_rescore_jaccard": 0.0
+        }
+      ],
+      "original_rows": {
+        "train": 40224,
+        "val": 5028,
+        "test": 5029
+      },
+      "clean_rows": {
+        "train": 40149,
+        "val": 5026,
+        "test": 5029
+      },
+      "cleaned_csv_gzip_sha256": {
+        "train": "0f7064dca95b11f50f8684520cd1ba69cff52c8051f7b47144c738125bb228d1",
+        "val": "1d22d16ec5634b23dba6143e2b561c503c2b9b64ee9e42037711b5ce7ccf0af4",
+        "test": "ef1aa937692b9e5924ad9b674cbddcec7f8b9fb193db49231cceb38444966a27"
+      },
+      "deleted_row_counts": {
+        "train": 75,
+        "val": 2
+      },
+      "deleted_reason_counts": {
+        "train": {
+          "exact_in_validation": 29,
+          "known_test_near_candidate": 44,
+          "exact_in_test": 32,
+          "empty_normalized_text": 3,
+          "prior_exclusion_not_independently_exact": 5
+        },
+        "val": {
+          "known_test_near_candidate": 2,
+          "exact_in_test": 1
+        }
+      },
+      "original_exact_overlap_distinct_text_counts": {
+        "train_val_unique_normalized_texts": 21,
+        "train_test_unique_normalized_texts": 28,
+        "val_test_unique_normalized_texts": 1
+      },
+      "empty_normalized_rows_by_split": {
+        "train": 3,
+        "val": 0,
+        "test": 0
+      },
+      "prior_evidence_exclusion_crosscheck": {
+        "train": {
+          "prior_exclusion_rows": 65,
+          "independent_exact_exclusion_rows": 60,
+          "prior_only_row_ids_not_independently_exact": [
+            6485,
+            7011,
+            8892,
+            13834,
+            22685
+          ]
+        },
+        "val": {
+          "prior_exclusion_rows": 1,
+          "independent_exact_exclusion_rows": 1,
+          "prior_only_row_ids_not_independently_exact": []
+        }
+      },
+      "post_clean_exact_cross_split_overlap": 0,
+      "known_near_test_candidate_training_or_validation_rows_remaining": 0,
+      "fixed_original_test_text_digest_sha256": "8f8747a0a0d6d2ccc7f0ddf868f31fd5be5180356abd0f3746b325adf8b5f88c",
+      "fixed_test_original_label_distribution": {
+        "0": 2613,
+        "1": 2416
+      },
+      "clean_label_distribution": {
+        "train": {
+          "0": 20852,
+          "1": 19297
+        },
+        "val": {
+          "0": 2610,
+          "1": 2416
+        },
+        "test": {
+          "0": 2613,
+          "1": 2416
+        }
+      },
+      "scientific_limits": [
+        "Exact disjointness was verified using NFKC/casefold/punctuation-symbol-control removal.",
+        "Known near-duplicate pairs to test were removed from prior train and validation rows.",
+        "The near-duplicate screen is approximate/non-exhaustive; unobserved near matches may remain.",
+        "The original test labels were retained; labels were not independently audited for every item.",
+        "New evaluation metrics require fresh base-model training on this cleaned training set."
+      ]
+    }
+  }
+}

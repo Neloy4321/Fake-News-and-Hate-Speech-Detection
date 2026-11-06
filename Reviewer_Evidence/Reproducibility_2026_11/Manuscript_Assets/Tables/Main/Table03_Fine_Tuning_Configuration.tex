@@ -1,0 +1,31 @@
+% Revision table Table03. Requires \usepackage{booktabs,adjustbox}.
+\begin{table}[H]
+\centering
+\caption{Reported transformer fine-tuning configuration and verified training-seed scope.}
+\label{tab:hyper}
+\footnotesize
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lr}
+\toprule
+Setting & Value \\
+\midrule
+Backbones & BanglaBERT, multilingual BERT (mBERT) \\
+Optimizer & AdamW \\
+Learning rate & 5e-5 \\
+Weight decay & 0.01 \\
+Scheduler & Linear decay, 500 warmup steps (reported) \\
+Epoch budget & 3 \\
+Batch size (per device) & 16 \\
+Maximum sequence length & 256 Fake News / 128 Hate Speech \\
+Precision & FP16 (reported) \\
+Checkpoint selection & Highest validation macro-F1 \\
+Independent random seeds & 42, 52, 62 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\vspace{2pt}
+\begin{minipage}{\linewidth}
+\scriptsize\emph{Provenance scope.} The P1 seed identifiers, selected validation epochs and reported test metrics are retained in the P1 archives. Optimizer, weight decay, schedule, mixed precision and hardware reflect the historical submitted protocol, not independently verified settings for every P1 run. Separate P2 CUDA run metadata and its training code support AdamW, linear warmup and T4 execution for the seven archived runs described in Supplementary Table S8; they do not retrospectively prove the P1 configuration. The authors do not claim complete historical training-log verification.
+\end{minipage}
+\end{table}
+

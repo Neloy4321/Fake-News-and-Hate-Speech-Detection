@@ -1,0 +1,30 @@
+\begin{table}[p]
+\centering
+\caption{Separate P2 V1 normalized-exact-overlap-controlled rerun:
+original source-label held-out Accuracy across 12 fine-tuning runs.}
+\label{tab:p2runs}
+\footnotesize
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llrrr}
+\toprule
+Task & Encoder & Seed 42 (\%) & Seed 52 (\%) & Seed 62 (\%) \\
+\midrule
+Fake News & BanglaBERT & 92.012 & 92.033 & 92.212 \\
+Fake News & mBERT & 84.719 & 86.584 & 86.363 \\
+Hate Speech & BanglaBERT & 92.384 & 92.503 & 92.325 \\
+Hate Speech & mBERT & 91.967 & 91.927 & 91.748 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\linewidth}\scriptsize
+\emph{Scope.} The nine non-Fake-News/BanglaBERT runs were re-audited
+from supplied saved prediction outputs; the three FN/BanglaBERT values
+are transcribed from the separately supplied seed-42/52/62 evidence
+reports. This is a V1 exact-overlap-controlled protocol, not the original
+P1 benchmark and not the untrained, stricter V2 split. In Fake News,
+2,542 training--test lexical near-match pairs (Jaccard$\geq0.80$)
+were still identified after V1 cleaning. Consequently the table must
+not be described as fully leakage-free performance.
+\end{minipage}
+\end{table}

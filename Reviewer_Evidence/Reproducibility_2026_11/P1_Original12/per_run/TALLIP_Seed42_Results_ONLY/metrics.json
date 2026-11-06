@@ -1,0 +1,27 @@
+{
+  "task": "fakenews",
+  "model": "csebuetnlp/banglabert",
+  "model_key": "banglabert",
+  "seed": 42,
+  "max_length": 256,
+  "epochs": 3,
+  "train_batch_size": 16,
+  "lr": 5e-05,
+  "warmup_steps": 500,
+  "class_weighted": false,
+  "best_epoch": 3,
+  "best_validation_macro_f1": 0.9111358582632314,
+  "test": {
+    "accuracy": 0.9198018758562546,
+    "macro_precision": 0.9178096479791396,
+    "macro_recall": 0.9007875448858813,
+    "macro_f1": 0.908429618843354
+  },
+  "elapsed_seconds": 5553.61,
+  "gpu": "Tesla T4",
+  "torch_version": "2.11.0+cu128",
+  "normalizer": "bangla",
+  "experimental_only": false,
+  "truncation_note": "Only first 256 subword tokens processed; full article not explained.",
+  "labels_source": "published dataset CSV labels; not independently human re-annotated"
+}

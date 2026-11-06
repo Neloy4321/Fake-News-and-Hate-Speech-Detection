@@ -1,0 +1,126 @@
+{
+  "status": "CUDA_FULL_TRAINING_COMPLETED_AND_TEST_EVALUATED",
+  "finished_utc": "2026-11-05T14:13:22.318296+00:00",
+  "execution_device": "cuda",
+  "micro_batch": 8,
+  "effective_batch_size": 16,
+  "resumed_gpu_epoch_on_cpu": false,
+  "config": {
+    "task": "fakenews",
+    "model_key": "mbert",
+    "base_model": "bert-base-multilingual-cased",
+    "seed": 42,
+    "max_length": 256,
+    "epochs": 3,
+    "train_batch_size": 16,
+    "eval_batch_size": 32,
+    "learning_rate": 5e-05,
+    "warmup_steps": 500,
+    "class_weighted": false,
+    "train_rows": 75711,
+    "val_rows": 9467,
+    "test_rows": 9489
+  },
+  "manifest_sha256": "0b8104b02faccac1cccc492157ab42dcfd155cf01098830359bbd58241d5a83a",
+  "best_epoch": 3,
+  "best_validation": {
+    "accuracy": 0.8526460335903665,
+    "macro_precision": 0.8394870312129774,
+    "macro_recall": 0.8252070345863898,
+    "macro_f1": 0.8315248018563002,
+    "confusion_matrix_labels_0_1": [
+      [
+        5712,
+        572
+      ],
+      [
+        823,
+        2360
+      ]
+    ]
+  },
+  "fixed_original_test": {
+    "accuracy": 0.8471914848772263,
+    "macro_precision": 0.8341028582303525,
+    "macro_recall": 0.817774137676392,
+    "macro_f1": 0.8248499792504181,
+    "confusion_matrix_labels_0_1": [
+      [
+        5714,
+        580
+      ],
+      [
+        870,
+        2325
+      ]
+    ]
+  },
+  "best_checkpoint_safetensors_sha256": "b42e07db7eb91e214b8faeb8550cb2f9bdac286d515cfbefe54d8e160168085f",
+  "history": [
+    {
+      "epoch": 1,
+      "validation": {
+        "accuracy": 0.8192669272208725,
+        "macro_precision": 0.8023696699383923,
+        "macro_recall": 0.7837076514255694,
+        "macro_f1": 0.7914406662089393,
+        "confusion_matrix_labels_0_1": [
+          [
+            5607,
+            677
+          ],
+          [
+            1034,
+            2149
+          ]
+        ]
+      },
+      "session_train_loss_per_completed_step": 0.4604482900663039
+    },
+    {
+      "epoch": 2,
+      "validation": {
+        "accuracy": 0.8441956269145453,
+        "macro_precision": 0.8315659741024732,
+        "macro_recall": 0.812485238955439,
+        "macro_f1": 0.8205578881994553,
+        "confusion_matrix_labels_0_1": [
+          [
+            5714,
+            570
+          ],
+          [
+            905,
+            2278
+          ]
+        ]
+      },
+      "session_train_loss_per_completed_step": 0.36040429109652367
+    },
+    {
+      "epoch": 3,
+      "validation": {
+        "accuracy": 0.8526460335903665,
+        "macro_precision": 0.8394870312129774,
+        "macro_recall": 0.8252070345863898,
+        "macro_f1": 0.8315248018563002,
+        "confusion_matrix_labels_0_1": [
+          [
+            5712,
+            572
+          ],
+          [
+            823,
+            2360
+          ]
+        ]
+      },
+      "session_train_loss_per_completed_step": 0.2941865122932956
+    }
+  ],
+  "limitations": [
+    "CPU microbatch accumulation is mathematically equivalent to effective batch 16, but dropout ordering and floating-point arithmetic may differ from GPU.",
+    "Resuming at a GPU epoch boundary changes the subsequent CPU shuffle order and random-number stream; declare mixed-device protocol if used.",
+    "Known near duplicates were filtered; unobserved semantic overlaps not ruled out."
+  ]
+}

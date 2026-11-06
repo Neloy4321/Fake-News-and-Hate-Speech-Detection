@@ -1,0 +1,26 @@
+% Revision table Table08. Requires \usepackage{booktabs,adjustbox}.
+\begin{table}[t]
+\centering
+\caption{BanglaBERT minus mBERT test accuracy differences by original text length, averaged across seeds.}
+\label{tab:length}
+\footnotesize
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lrrr}
+\toprule
+Task & Length stratum (words) & n & Accuracy gap mean $\pm$ SD (pp) \\
+\midrule
+Fake News & short: $\leq$121 & 3,205 & 7.51 $\pm$ 1.30 \\
+Fake News & medium: 122--220 & 3,133 & 8.06 $\pm$ 1.24 \\
+Fake News & long: \textgreater{}220 & 3,151 & 6.52 $\pm$ 0.94 \\
+Hate Speech & short: $\leq$6 & 1,900 & 1.81 $\pm$ 0.57 \\
+Hate Speech & medium: 7--12 & 1,539 & 1.88 $\pm$ 0.19 \\
+Hate Speech & long: \textgreater{}12 & 1,590 & 1.68 $\pm$ 0.92 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\vspace{2pt}
+\begin{minipage}{\linewidth}
+\scriptsize\emph{Note.} Source-label original full-test predictions, whitespace words (not transformer tokens); three-seed sample SD. The Fake News advantage is not monotonically increasing toward the longest tercile. This is observational and does not establish domain-pretraining or full-context causality.
+\end{minipage}
+\end{table}
+

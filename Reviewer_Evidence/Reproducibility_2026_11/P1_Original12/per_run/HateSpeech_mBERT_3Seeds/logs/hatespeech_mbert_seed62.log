@@ -1,0 +1,46 @@
+COMMAND: /usr/bin/python3 stage4_multiseed_train.py --task hatespeech --model mbert --seed 62 --out-root /kaggle/working/tallip_hatespeech_mbert_3seed --normalizer bangla --hate-dir /kaggle/input/datasets/naurosromim/bdshs
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-multilingual-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/usr/local/lib/python3.13/dist-packages/torch/autograd/graph.py:869: UserWarning: Memory Efficient attention defaults to a non-deterministic algorithm. To explicitly enable determinism call torch.use_deterministic_algorithms(True, warn_only=False). (Triggered internally at /pytorch/aten/src/ATen/native/transformers/cuda/attention_backward.cu:900.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+hatespeech/mbert/seed62 epoch=1 step=200/2514 loss=0.5738
+hatespeech/mbert/seed62 epoch=1 step=400/2514 loss=0.4882
+hatespeech/mbert/seed62 epoch=1 step=600/2514 loss=0.4629
+hatespeech/mbert/seed62 epoch=1 step=800/2514 loss=0.4501
+hatespeech/mbert/seed62 epoch=1 step=1000/2514 loss=0.4366
+hatespeech/mbert/seed62 epoch=1 step=1200/2514 loss=0.4336
+hatespeech/mbert/seed62 epoch=1 step=1400/2514 loss=0.4228
+hatespeech/mbert/seed62 epoch=1 step=1600/2514 loss=0.4202
+hatespeech/mbert/seed62 epoch=1 step=1800/2514 loss=0.4156
+hatespeech/mbert/seed62 epoch=1 step=2000/2514 loss=0.4106
+hatespeech/mbert/seed62 epoch=1 step=2200/2514 loss=0.4078
+hatespeech/mbert/seed62 epoch=1 step=2400/2514 loss=0.4096
+VALIDATION {"accuracy": 0.8677406523468576, "macro_precision": 0.8684455580722015, "macro_recall": 0.8667861905824367, "macro_f1": 0.8672899930085154, "epoch": 1, "train_loss": 0.4090952207167635}
+hatespeech/mbert/seed62 epoch=2 step=200/2514 loss=0.4239
+hatespeech/mbert/seed62 epoch=2 step=400/2514 loss=0.4067
+hatespeech/mbert/seed62 epoch=2 step=600/2514 loss=0.4042
+hatespeech/mbert/seed62 epoch=2 step=800/2514 loss=0.3899
+hatespeech/mbert/seed62 epoch=2 step=1000/2514 loss=0.3787
+hatespeech/mbert/seed62 epoch=2 step=1200/2514 loss=0.3715
+hatespeech/mbert/seed62 epoch=2 step=1400/2514 loss=0.3686
+hatespeech/mbert/seed62 epoch=2 step=1600/2514 loss=0.3697
+hatespeech/mbert/seed62 epoch=2 step=1800/2514 loss=0.3697
+hatespeech/mbert/seed62 epoch=2 step=2000/2514 loss=0.3704
+hatespeech/mbert/seed62 epoch=2 step=2200/2514 loss=0.3693
+hatespeech/mbert/seed62 epoch=2 step=2400/2514 loss=0.3669
+VALIDATION {"accuracy": 0.8933969769291965, "macro_precision": 0.8932179435177204, "macro_recall": 0.893265798200866, "macro_f1": 0.8932413032524267, "epoch": 2, "train_loss": 0.36529491273219517}
+hatespeech/mbert/seed62 epoch=3 step=200/2514 loss=0.2981
+hatespeech/mbert/seed62 epoch=3 step=400/2514 loss=0.3015
+hatespeech/mbert/seed62 epoch=3 step=600/2514 loss=0.2939
+hatespeech/mbert/seed62 epoch=3 step=800/2514 loss=0.2918
+hatespeech/mbert/seed62 epoch=3 step=1000/2514 loss=0.2921
+hatespeech/mbert/seed62 epoch=3 step=1200/2514 loss=0.2941
+hatespeech/mbert/seed62 epoch=3 step=1400/2514 loss=0.2913
+hatespeech/mbert/seed62 epoch=3 step=1600/2514 loss=0.2887
+hatespeech/mbert/seed62 epoch=3 step=1800/2514 loss=0.2876
+hatespeech/mbert/seed62 epoch=3 step=2000/2514 loss=0.2856
+hatespeech/mbert/seed62 epoch=3 step=2200/2514 loss=0.2849
+hatespeech/mbert/seed62 epoch=3 step=2400/2514 loss=0.2810
+VALIDATION {"accuracy": 0.9073190135242641, "macro_precision": 0.907168458781362, "macro_recall": 0.9071934930985872, "macro_f1": 0.9071808318043375, "epoch": 3, "train_loss": 0.2802475739689803}
+TEST {"accuracy": 0.9041558958043349, "macro_precision": 0.9039903987785447, "macro_recall": 0.9040398016286373, "macro_f1": 0.9040145259335781} OUTPUT /kaggle/working/tallip_hatespeech_mbert_3seed/real_runs/hatespeech/mbert/seed_62
+RETURN_CODE: 0

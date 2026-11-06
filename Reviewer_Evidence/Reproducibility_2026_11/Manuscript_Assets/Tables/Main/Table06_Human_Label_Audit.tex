@@ -1,0 +1,23 @@
+% Revision table Table06. Requires \usepackage{booktabs,adjustbox}.
+\begin{table}[t]
+\centering
+\caption{Final-sheet annotation concordance by eligible cohort and review stage. These are not verified blind first-pass IAA estimates.}
+\label{tab:human_iaa}
+\footnotesize
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lcccccc}
+\toprule
+Task & Rater comparison / labels & Scope n & Agree n & Agreement (\%) & $\kappa$ / $\alpha$ & Source disagreement candidates \\
+\midrule
+Fake News & Neloy--Sajib; final binary eligible & 315 & 303 & 96.19 & Descriptive $\kappa$ = 0.907 & 68 (2-rater strict consensus) \\
+Hate Speech & Neloy--Sajib; post-discussion, 4 labels & 240 & 236 & 98.33 & Descriptive $\kappa$ = 0.968 & 34 (2-rater strict consensus) \\
+Hate Speech & Three-rater final labels, 4 categories & 240 & 213 & 88.75 & Descriptive $\kappa$ = 0.858 & 29 (unanimous binary) \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\vspace{2pt}
+\begin{minipage}{\linewidth}
+\scriptsize\emph{Note.} The Fake News audit has 360 items; 315 were jointly binary-eligible and 303 agreed, but the surviving final sheets do not prove whether this figure predates reconciliation. Hate Speech's 236/240 explicitly follows discussion and must not be presented as independent agreement. Kappa values here describe saved label concordance, not confirmed blind IAA. Third-rater independence was reported by the authors but its chronology has no external audit trail. Source-disagreement candidates are not established ground-truth errors.
+\end{minipage}
+\end{table}
+

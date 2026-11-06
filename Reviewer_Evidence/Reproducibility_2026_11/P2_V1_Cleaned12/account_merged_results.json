@@ -1,0 +1,158 @@
+{
+  "account": "30h",
+  "manifest_sha256": "0b8104b02faccac1cccc492157ab42dcfd155cf01098830359bbd58241d5a83a",
+  "selected_runs": [
+    "hatespeech/banglabert/seed_62",
+    "hatespeech/mbert/seed_42",
+    "hatespeech/mbert/seed_52",
+    "fakenews/mbert/seed_42",
+    "hatespeech/mbert/seed_62",
+    "fakenews/mbert/seed_52",
+    "fakenews/mbert/seed_62"
+  ],
+  "completed_count": 7,
+  "incomplete_runs": [],
+  "completed": {
+    "hatespeech/mbert/seed_52": {
+      "result_file": "lane_0/hatespeech/mbert/seed_52/done.json",
+      "fixed_original_test": {
+        "accuracy": 0.9192682441837343,
+        "macro_precision": 0.9190419740396845,
+        "macro_recall": 0.9195030324688327,
+        "macro_f1": 0.9191953946566493,
+        "confusion_matrix_labels_0_1": [
+          [
+            2387,
+            226
+          ],
+          [
+            180,
+            2236
+          ]
+        ]
+      },
+      "best_epoch": 3
+    },
+    "hatespeech/mbert/seed_42": {
+      "result_file": "lane_0/hatespeech/mbert/seed_42/done.json",
+      "fixed_original_test": {
+        "accuracy": 0.9196659375621395,
+        "macro_precision": 0.9194643825535165,
+        "macro_recall": 0.9200105559821878,
+        "macro_f1": 0.9196062752591082,
+        "confusion_matrix_labels_0_1": [
+          [
+            2381,
+            232
+          ],
+          [
+            172,
+            2244
+          ]
+        ]
+      },
+      "best_epoch": 3
+    },
+    "hatespeech/banglabert/seed_62": {
+      "result_file": "lane_0/hatespeech/banglabert/seed_62/done.json",
+      "fixed_original_test": {
+        "accuracy": 0.9232451779677868,
+        "macro_precision": 0.9230444622468925,
+        "macro_recall": 0.9235952972022212,
+        "macro_f1": 0.9231881738861776,
+        "confusion_matrix_labels_0_1": [
+          [
+            2390,
+            223
+          ],
+          [
+            163,
+            2253
+          ]
+        ]
+      },
+      "best_epoch": 2
+    },
+    "fakenews/mbert/seed_42": {
+      "result_file": "lane_0/fakenews/mbert/seed_42/done.json",
+      "fixed_original_test": {
+        "accuracy": 0.8471914848772263,
+        "macro_precision": 0.8341028582303525,
+        "macro_recall": 0.817774137676392,
+        "macro_f1": 0.8248499792504181,
+        "confusion_matrix_labels_0_1": [
+          [
+            5714,
+            580
+          ],
+          [
+            870,
+            2325
+          ]
+        ]
+      },
+      "best_epoch": 3
+    },
+    "hatespeech/mbert/seed_62": {
+      "result_file": "lane_1/hatespeech/mbert/seed_62/done.json",
+      "fixed_original_test": {
+        "accuracy": 0.9174786239809107,
+        "macro_precision": 0.9173143303478639,
+        "macro_recall": 0.9179056956683724,
+        "macro_f1": 0.917426789710688,
+        "confusion_matrix_labels_0_1": [
+          [
+            2370,
+            243
+          ],
+          [
+            172,
+            2244
+          ]
+        ]
+      },
+      "best_epoch": 3
+    },
+    "fakenews/mbert/seed_52": {
+      "result_file": "lane_1/fakenews/mbert/seed_52/done.json",
+      "fixed_original_test": {
+        "accuracy": 0.865844662240489,
+        "macro_precision": 0.8654517189175592,
+        "macro_recall": 0.8282906740304128,
+        "macro_f1": 0.8424279642422334,
+        "confusion_matrix_labels_0_1": [
+          [
+            5937,
+            357
+          ],
+          [
+            916,
+            2279
+          ]
+        ]
+      },
+      "best_epoch": 3
+    },
+    "fakenews/mbert/seed_62": {
+      "result_file": "lane_1/fakenews/mbert/seed_62/done.json",
+      "fixed_original_test": {
+        "accuracy": 0.8636315734007799,
+        "macro_precision": 0.8605620939338918,
+        "macro_recall": 0.8278552791167085,
+        "macro_f1": 0.8406288441771816,
+        "confusion_matrix_labels_0_1": [
+          [
+            5900,
+            394
+          ],
+          [
+            900,
+            2295
+          ]
+        ]
+      },
+      "best_epoch": 3
+    }
+  },
+  "warning": "Only done.json counts; no unobserved run is imputed."
+}

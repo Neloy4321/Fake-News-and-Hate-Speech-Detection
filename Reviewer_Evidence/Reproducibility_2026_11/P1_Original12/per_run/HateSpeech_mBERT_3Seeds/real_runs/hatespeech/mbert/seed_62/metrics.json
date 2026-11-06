@@ -1,0 +1,27 @@
+{
+  "task": "hatespeech",
+  "model": "bert-base-multilingual-cased",
+  "model_key": "mbert",
+  "seed": 62,
+  "max_length": 128,
+  "epochs": 3,
+  "train_batch_size": 16,
+  "lr": 5e-05,
+  "warmup_steps": 500,
+  "class_weighted": false,
+  "best_epoch": 3,
+  "best_validation_macro_f1": 0.9071808318043375,
+  "test": {
+    "accuracy": 0.9041558958043349,
+    "macro_precision": 0.9039903987785447,
+    "macro_recall": 0.9040398016286373,
+    "macro_f1": 0.9040145259335781
+  },
+  "elapsed_seconds": 1401.03,
+  "gpu": "Tesla T4",
+  "torch_version": "2.11.0+cu128",
+  "normalizer": "bangla",
+  "experimental_only": false,
+  "truncation_note": "Only first 128 subword tokens processed; full article not explained.",
+  "labels_source": "published dataset CSV labels; not independently human re-annotated"
+}

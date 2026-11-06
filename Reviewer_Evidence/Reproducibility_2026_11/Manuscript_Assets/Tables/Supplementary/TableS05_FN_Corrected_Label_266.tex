@@ -1,0 +1,32 @@
+\begin{table}[p]
+\centering
+\caption{Fake News author-approved eligible random-panel label sensitivity
+for the six frozen original-split model predictions. This is a selected,
+weighted sample ($n=266$), not the corrected full test partition.}
+\label{tab:fn266}
+\footnotesize
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lrrrrrr}
+\toprule
+Encoder & Seed & Original Acc. (\%) & Corrected Acc. (\%) &
+$\Delta$ Acc. (pp) & Original Macro-$F_1$ & Corrected Macro-$F_1$ \\
+\midrule
+BanglaBERT & 42 & 93.14 & 87.77 & -5.36 & 0.924 & 0.848 \\
+BanglaBERT & 52 & 91.87 & 86.51 & -5.36 & 0.910 & 0.834 \\
+BanglaBERT & 62 & 92.39 & 84.47 & -7.92 & 0.917 & 0.811 \\
+mBERT & 42 & 85.76 & 82.95 & -2.80 & 0.839 & 0.782 \\
+mBERT & 52 & 84.49 & 85.25 & +0.76 & 0.824 & 0.811 \\
+mBERT & 62 & 85.00 & 84.23 & -0.77 & 0.831 & 0.799 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\smallskip
+\begin{minipage}{\linewidth}\scriptsize
+\emph{Provenance.} Author-approved binary eligibility: 317/360 matched
+cases (266 random-stratified, 51 targeted); 43 were held/excluded.
+Random-panel values use inverse-inclusion weights by original-label
+stratum, with targeted cases excluded. Corrections include fourteen
+AI-assisted, author-approved decisions, not a third blind adjudication.
+The original 303 strict two-rater consensuses are reported separately.
+\end{minipage}
+\end{table}

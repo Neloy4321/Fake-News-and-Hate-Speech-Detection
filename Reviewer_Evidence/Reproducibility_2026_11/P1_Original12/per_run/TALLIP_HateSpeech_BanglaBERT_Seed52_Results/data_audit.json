@@ -1,0 +1,50 @@
+{
+  "task": "hatespeech",
+  "normalizer": "bangla",
+  "data_source": "/kaggle/input/datasets/naurosromim/bdshs",
+  "counts_before": {
+    "train": 40224,
+    "val": 5028,
+    "test": 5029
+  },
+  "invalid_or_empty": {
+    "train": 0,
+    "val": 0,
+    "test": 0
+  },
+  "cross_split_unique_text_overlaps": {
+    "train_val": 4,
+    "train_test": 4,
+    "val_test": 0
+  },
+  "rows_removed_to_prevent_overlap": {
+    "train": 8,
+    "val": 0,
+    "test": 0
+  },
+  "counts_after": {
+    "train": 40216,
+    "val": 5028,
+    "test": 5029
+  },
+  "class_counts": {
+    "train": {
+      "1": 19319,
+      "0": 20897
+    },
+    "val": {
+      "1": 2416,
+      "0": 2612
+    },
+    "test": {
+      "1": 2416,
+      "0": 2613
+    }
+  },
+  "sha256_first_1000_texts": {
+    "train": "e19d40738876fd73c4a2fb0c85f8de62b56e2ef6a6a30ec9c60347ee55932a3e",
+    "val": "8a35a3eb82b698c0118129f1072a47d919b1229837c47ba6d1f2672109e75095",
+    "test": "4354428ad178f2216ea02d36299be31bc65f86d363a27f10022a8dea4dc79839"
+  },
+  "test_preserved": true
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "epoch": 1,
+    "validation": {
+      "accuracy": 0.9186231595702348,
+      "macro_precision": 0.9188032848074095,
+      "macro_recall": 0.9194016264494684,
+      "macro_f1": 0.918604054912924,
+      "confusion_matrix_labels_0_1": [
+        [
+          2347,
+          263
+        ],
+        [
+          146,
+          2270
+        ]
+      ]
+    },
+    "session_train_loss_per_completed_step": 0.26744610911821465
+  },
+  {
+    "epoch": 2,
+    "validation": {
+      "accuracy": 0.9218066056506168,
+      "macro_precision": 0.921587067691808,
+      "macro_recall": 0.9219591294308696,
+      "macro_f1": 0.9217282709464227,
+      "confusion_matrix_labels_0_1": [
+        [
+          2396,
+          214
+        ],
+        [
+          179,
+          2237
+        ]
+      ]
+    },
+    "session_train_loss_per_completed_step": 0.16235627558126867
+  },
+  {
+    "epoch": 3,
+    "validation": {
+      "accuracy": 0.9216076402705929,
+      "macro_precision": 0.921475794365173,
+      "macro_recall": 0.9220752137728045,
+      "macro_f1": 0.9215644055916579,
+      "confusion_matrix_labels_0_1": [
+        [
+          2375,
+          235
+        ],
+        [
+          159,
+          2257
+        ]
+      ]
+    },
+    "session_train_loss_per_completed_step": 0.0896899949031997
+  }
+]

@@ -1,0 +1,108 @@
+{
+  "task": "hatespeech",
+  "model": "bert-base-multilingual-cased",
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "split": "published BD-SHS test (n=5029)",
+  "normalizer": "bangla",
+  "max_length": 128,
+  "epochs": 3,
+  "train_batch_size": 16,
+  "learning_rate": 5e-05,
+  "warmup_steps": 500,
+  "checkpoint_selection": "validation macro-F1 only",
+  "test_evaluation": "once after checkpoint selection for each seed",
+  "metrics_mean_sd_sample": {
+    "accuracy": {
+      "mean": 0.9087293696559953,
+      "sd_ddof1": 0.00438816394724873
+    },
+    "macro_precision": {
+      "mean": 0.9085801342260731,
+      "sd_ddof1": 0.004423485488087164
+    },
+    "macro_recall": {
+      "mean": 0.9086125029462976,
+      "sd_ddof1": 0.004354126302207235
+    },
+    "macro_f1": {
+      "mean": 0.9085933212699994,
+      "sd_ddof1": 0.004387357899344
+    },
+    "roc_auc": {
+      "mean": 0.9619440526607917,
+      "sd_ddof1": 0.0031961472303849514
+    }
+  },
+  "runs": [
+    {
+      "seed": 42,
+      "accuracy": 0.9091270630344005,
+      "macro_precision": 0.9089338759223485,
+      "macro_recall": 0.9090888210501238,
+      "macro_f1": 0.909005251418568,
+      "roc_auc": 0.9649133186588706,
+      "confusion_matrix": [
+        [
+          2378,
+          235
+        ],
+        [
+          222,
+          2194
+        ]
+      ],
+      "best_validation_macro_f1": 0.9119665748242284,
+      "best_epoch": 3,
+      "elapsed_seconds": 1405.34
+    },
+    {
+      "seed": 52,
+      "accuracy": 0.9129051501292503,
+      "macro_precision": 0.9128161279773259,
+      "macro_recall": 0.9127088861601316,
+      "macro_f1": 0.9127601864578522,
+      "roc_auc": 0.9623575639378249,
+      "confusion_matrix": [
+        [
+          2398,
+          215
+        ],
+        [
+          223,
+          2193
+        ]
+      ],
+      "best_validation_macro_f1": 0.9081516942504522,
+      "best_epoch": 3,
+      "elapsed_seconds": 1400.61
+    },
+    {
+      "seed": 62,
+      "accuracy": 0.9041558958043349,
+      "macro_precision": 0.9039903987785447,
+      "macro_recall": 0.9040398016286373,
+      "macro_f1": 0.9040145259335781,
+      "roc_auc": 0.9585612753856798,
+      "confusion_matrix": [
+        [
+          2370,
+          243
+        ],
+        [
+          239,
+          2177
+        ]
+      ],
+      "best_validation_macro_f1": 0.9071808318043375,
+      "best_epoch": 3,
+      "elapsed_seconds": 1401.03
+    }
+  ],
+  "prediction_alignment_check": "PASS",
+  "labels_source": "original BD-SHS labels; no independent human annotation",
+  "notes": "Mean and sample SD of seeds; not a confidence interval or human annotator agreement."
+}

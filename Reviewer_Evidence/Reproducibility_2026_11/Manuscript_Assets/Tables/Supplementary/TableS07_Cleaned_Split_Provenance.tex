@@ -1,0 +1,53 @@
+% Byte-level identifiers transcribed from the archived P2 manifest and
+% independently matched against locally retained cleaned CSV gzip files.
+\begin{table}[p]
+\centering
+\caption{P2 V1 split preparation, row counts and reproducibility digests.
+The test rows and source labels were kept fixed.}
+\label{tab:p2manifest}
+\footnotesize
+\begin{tabular}{lrrr}
+\toprule
+Dataset / stage & Train & Validation & Test \\
+\midrule
+Fake News P1 source split & 75,905 & 9,489 & 9,489 \\
+Fake News P2 V1 cleaned & 75,711 & 9,467 & 9,489 \\
+Hate Speech P1 source split & 40,224 & 5,028 & 5,029 \\
+Hate Speech P2 V1 cleaned & 40,149 & 5,026 & 5,029 \\
+\bottomrule
+\end{tabular}
+
+\vspace{7pt}
+\scriptsize
+\begin{tabular}{ll}
+\toprule
+Saved artifact & SHA-256 (complete hex digest) \\
+\midrule
+P2 manifest & \texttt{0b8104b02faccac1cccc492157ab42dcfd155cf01098830359bbd58241d5a83a} \\
+FN clean train.gz & \texttt{5ffc8bb11edbfb327c5eae0b3f794d5d8a1fccc292f78dbd04857a3132f64539} \\
+FN clean val.gz & \texttt{d1c28b0aa8e38536bb0166ac13338887b786e04202d0fff76d55e6681f545820} \\
+FN clean test.gz & \texttt{c72fb82b2d8fb2de45488244e1b9cd0e4502d038088f1ec5a494c108ed57578b} \\
+HS clean train.gz & \texttt{0f7064dca95b11f50f8684520cd1ba69cff52c8051f7b47144c738125bb228d1} \\
+HS clean val.gz & \texttt{1d22d16ec5634b23dba6143e2b561c503c2b9b64ee9e42037711b5ce7ccf0af4} \\
+HS clean test.gz & \texttt{ef1aa937692b9e5924ad9b674cbddcec7f8b9fb193db49231cceb38444966a27} \\
+FN fixed test text & \texttt{cb0d84d405ee80f2e51a466d8e3f2f3f7aef4cbbc29758dc40e3f88f91bdb106} \\
+HS fixed test text & \texttt{8f8747a0a0d6d2ccc7f0ddf868f31fd5be5180356abd0f3746b325adf8b5f88c} \\
+\bottomrule
+\end{tabular}
+
+\par\smallskip
+\begin{minipage}{0.96\linewidth}\scriptsize
+\emph{Algorithm and verification.} The exact-match key used NFKC,
+casefold, punctuation/symbol/control-to-space replacement and collapsed
+whitespace. Test records took precedence; train lost 194 FN and 75 HS
+rows, validation lost 22 FN and 2 HS rows. Earlier-split rows in the
+previously identified test-near-candidate list were conservatively
+removed as well. All three normalized exact cross-split intersections
+were zero after cleaning. The prior near-candidate search was approximate
+and is not a comprehensive semantic or same-event leak audit. SHA-256
+of the gzip bytes identifies files but does not prove that an arbitrary
+model trained on those particular bytes without its corresponding run
+record. The P2 manifest SHA-256 above is referenced by the seven
+archived CUDA \texttt{done.json} reports in Table~S8.
+\end{minipage}
+\end{table}

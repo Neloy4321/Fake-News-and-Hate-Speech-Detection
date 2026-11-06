@@ -1,0 +1,34 @@
+{
+  "input_root": "/kaggle/input",
+  "output_root": "/kaggle/working/TALLIP_26-0521_FourIssue_Evidence",
+  "checkpoint_zip_hint": "",
+  "data_fakenews_hint": "",
+  "data_hatespeech_hint": "",
+  "model_fakenews_hint": "",
+  "model_hatespeech_hint": "",
+  "shap_repeats": 3,
+  "lime_samples": 512,
+  "random_draws": 20,
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "ig_steps": [
+    64,
+    128,
+    256,
+    512,
+    1024,
+    2048
+  ],
+  "ig_tolerance": 0.1,
+  "long_article_cases": 4,
+  "long_article_stride": 128,
+  "long_article_preferred_max_subwords": 768,
+  "bootstrap_draws": 2000,
+  "near_screen": true,
+  "near_max_candidates_per_test": 400,
+  "audit_reference": "/kaggle/working/tallip_embedded_human_audit.json"
+}

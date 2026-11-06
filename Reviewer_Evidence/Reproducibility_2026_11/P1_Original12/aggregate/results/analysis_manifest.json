@@ -1,0 +1,246 @@
+{
+  "generated_at_utc": "2026-11-01T07:30:43.625857+00:00",
+  "project": "TALLIP-26-0521",
+  "no_new_training": true,
+  "input_zip_sha256": {
+    "TALLIP_FakeNews_mBERT_Seed42_Results.zip": "397183db37c70178e70ccb094f2f8920ae8f23d72e8319b3265f57900273b873",
+    "TALLIP_FakeNews_mBERT_Seed52_Results.zip": "9e81438036289c8b1e30a27cd7b7aa9c7bcd9614c721cea0febd80070af75a4b",
+    "TALLIP_FakeNews_mBERT_Seed62_Results.zip": "be08a2c8f823109bbc18b20de0e12ddf85ec2f0105d50a2082b5511edfe17c8d",
+    "TALLIP_HateSpeech_BanglaBERT_Seed42_Results.zip": "e9c0105230559471d0d24e4a7ee42f2058c5af4041124dcfd7a3574999ecaac2",
+    "TALLIP_HateSpeech_BanglaBERT_Seed52_Results.zip": "ec48cc9d4a7be3683877af1d65058207d5ede52834822fc349a02a13585a1ace",
+    "TALLIP_HateSpeech_BanglaBERT_Seed62_Results.zip": "d894eedbe7ea7c44ca083730d4d623ed67be0c36693af93e164ec256238e2fe1",
+    "TALLIP_HateSpeech_mBERT_3Seeds_Results.zip": "4eac13299125984c346c5787d6255ea1d81c0e02fca94a467d77efeb75d12434",
+    "TALLIP_Seed42_Results_ONLY.zip": "ba8d3e3de4037de5444d0270ef0c7edb711d438a639a6f8d7227a7c138f22475",
+    "TALLIP_fakenews_banglabert_seed_52_evidence.zip": "46635fb90a1a83f11d682396a96f744eccde697c0787526c48a3e7bd0bc77789",
+    "TALLIP_fakenews_banglabert_seed_62_evidence.zip": "4c42e285b37b0956bd92e91ebc7954aec7bf530e5f0f871b06aa1b5041e7c64d"
+  },
+  "alignment": {
+    "fakenews": {
+      "test_count": 9489,
+      "true_class_counts": {
+        "1": 3195,
+        "0": 6294
+      },
+      "all_seed_model_test_alignment": "PASS",
+      "text_fingerprints": {
+        "train": "694a572711a0f704b37f0d8fdb42ca3c36924381038caf438611e3d470e7a45f",
+        "val": "a10672c49e6989e2ade333195fe047fbfc43236ef9c88cfb56ab9f569e150243",
+        "test": "d894d6db2c474a351ec787e560d282e9e3edd7defd886bd5360e21bdc7fc562f"
+      }
+    },
+    "hatespeech": {
+      "test_count": 5029,
+      "true_class_counts": {
+        "1": 2416,
+        "0": 2613
+      },
+      "all_seed_model_test_alignment": "PASS",
+      "text_fingerprints": {
+        "train": "e19d40738876fd73c4a2fb0c85f8de62b56e2ef6a6a30ec9c60347ee55932a3e",
+        "val": "8a35a3eb82b698c0118129f1072a47d919b1229837c47ba6d1f2672109e75095",
+        "test": "4354428ad178f2216ea02d36299be31bc65f86d363a27f10022a8dea4dc79839"
+      }
+    }
+  },
+  "checks": {
+    "run_count": 12,
+    "checkpoint_history": "PASS",
+    "prediction_recomputation": "PASS",
+    "test_alignment": "PASS"
+  },
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261101,
+  "holm_test_family_size": 6,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "sklearn": "1.8.0",
+  "model_aggregates": [
+    {
+      "dataset": "fakenews",
+      "model": "banglabert",
+      "seeds": "42,52,62",
+      "test_n": 9489,
+      "accuracy_mean": 0.9190993079706327,
+      "accuracy_sd_sample": 0.0012168832736634606,
+      "macro_precision_mean": 0.9164930457226755,
+      "macro_precision_sd_sample": 0.001140931557165981,
+      "macro_recall_mean": 0.9005404705179139,
+      "macro_recall_sd_sample": 0.0025371564064973684,
+      "macro_f1_mean": 0.9077331879493252,
+      "macro_f1_sd_sample": 0.0015925116898298894,
+      "roc_auc_mean": 0.96884572981795,
+      "roc_auc_sd_sample": 0.0011781692365140563
+    },
+    {
+      "dataset": "fakenews",
+      "model": "mbert",
+      "seeds": "42,52,62",
+      "test_n": 9489,
+      "accuracy_mean": 0.8454701935574525,
+      "accuracy_sd_sample": 0.010365495726528756,
+      "macro_precision_mean": 0.8387468451853662,
+      "macro_precision_sd_sample": 0.013887542223569395,
+      "macro_recall_mean": 0.8069989900210498,
+      "macro_recall_sd_sample": 0.010503627198930362,
+      "macro_f1_mean": 0.8191914431387038,
+      "macro_f1_sd_sample": 0.01165860490832974,
+      "roc_auc_mean": 0.8999237750172018,
+      "roc_auc_sd_sample": 0.018151499948222276
+    },
+    {
+      "dataset": "hatespeech",
+      "model": "banglabert",
+      "seeds": "42,52,62",
+      "test_n": 5029,
+      "accuracy_mean": 0.9266255716842314,
+      "accuracy_sd_sample": 0.0025850069596341295,
+      "macro_precision_mean": 0.9268607468804048,
+      "macro_precision_sd_sample": 0.002468062468519038,
+      "macro_recall_mean": 0.9271083082211629,
+      "macro_recall_sd_sample": 0.0018822533333382495,
+      "macro_f1_mean": 0.926569033729288,
+      "macro_f1_sd_sample": 0.0025115905781065853,
+      "roc_auc_mean": 0.9745895300623729,
+      "roc_auc_sd_sample": 0.002079302044142454
+    },
+    {
+      "dataset": "hatespeech",
+      "model": "mbert",
+      "seeds": "42,52,62",
+      "test_n": 5029,
+      "accuracy_mean": 0.9087293696559953,
+      "accuracy_sd_sample": 0.00438816394724873,
+      "macro_precision_mean": 0.9085801342260731,
+      "macro_precision_sd_sample": 0.004423485488087164,
+      "macro_recall_mean": 0.9086125029462976,
+      "macro_recall_sd_sample": 0.004354126302207235,
+      "macro_f1_mean": 0.9085933212699994,
+      "macro_f1_sd_sample": 0.004387357899344,
+      "roc_auc_mean": 0.9619440526607917,
+      "roc_auc_sd_sample": 0.0031961472303849514
+    }
+  ],
+  "paired_tests": [
+    {
+      "dataset": "fakenews",
+      "seed": 42,
+      "test_n": 9489,
+      "delta_accuracy": 0.07872273158393928,
+      "delta_macro_f1": 0.09384581665944247,
+      "banglabert_correct_mbert_wrong": 1014,
+      "mbert_correct_banglabert_wrong": 267,
+      "discordant_pairs": 1281,
+      "mcnemar_exact_two_sided_p": 1.0510394494528723e-102,
+      "delta_accuracy_ci95": [
+        0.07155653915059543,
+        0.08568078828116764
+      ],
+      "delta_macro_f1_ci95": [
+        0.08542383403803488,
+        0.10220746895741419
+      ],
+      "holm_adjusted_p": 5.255197247264362e-102
+    },
+    {
+      "dataset": "fakenews",
+      "seed": 52,
+      "test_n": 9489,
+      "delta_accuracy": 0.06038570976920643,
+      "delta_macro_f1": 0.07346136081732901,
+      "banglabert_correct_mbert_wrong": 825,
+      "mbert_correct_banglabert_wrong": 252,
+      "discordant_pairs": 1077,
+      "mcnemar_exact_two_sided_p": 1.5002674986546513e-71,
+      "delta_accuracy_ci95": [
+        0.053851828432922334,
+        0.06702497628833386
+      ],
+      "delta_macro_f1_ci95": [
+        0.06557219520267021,
+        0.08129946384576472
+      ],
+      "holm_adjusted_p": 6.001069994618605e-71
+    },
+    {
+      "dataset": "fakenews",
+      "seed": 62,
+      "test_n": 9489,
+      "delta_accuracy": 0.0817789018863948,
+      "delta_macro_f1": 0.09831805695509255,
+      "banglabert_correct_mbert_wrong": 1066,
+      "mbert_correct_banglabert_wrong": 290,
+      "discordant_pairs": 1356,
+      "mcnemar_exact_two_sided_p": 2.1047732679980147e-104,
+      "delta_accuracy_ci95": [
+        0.07440193908736431,
+        0.08926124986826853
+      ],
+      "delta_macro_f1_ci95": [
+        0.0899303409725314,
+        0.10708012942439447
+      ],
+      "holm_adjusted_p": 1.2628639607988088e-103
+    },
+    {
+      "dataset": "hatespeech",
+      "seed": 42,
+      "test_n": 5029,
+      "delta_accuracy": 0.020481208987870314,
+      "delta_macro_f1": 0.020461833966121223,
+      "banglabert_correct_mbert_wrong": 187,
+      "mbert_correct_banglabert_wrong": 84,
+      "discordant_pairs": 271,
+      "mcnemar_exact_two_sided_p": 3.58205142137485e-10,
+      "delta_accuracy_ci95": [
+        0.014118114933386359,
+        0.026844303042354346
+      ],
+      "delta_macro_f1_ci95": [
+        0.014081954618446463,
+        0.02686003740599194
+      ],
+      "holm_adjusted_p": 1.074615426412455e-09
+    },
+    {
+      "dataset": "hatespeech",
+      "seed": 52,
+      "test_n": 5029,
+      "delta_accuracy": 0.012328494730562745,
+      "delta_macro_f1": 0.012455003816069454,
+      "banglabert_correct_mbert_wrong": 190,
+      "mbert_correct_banglabert_wrong": 128,
+      "discordant_pairs": 318,
+      "mcnemar_exact_two_sided_p": 0.0006026213284022767,
+      "delta_accuracy_ci95": [
+        0.005368860608470869,
+        0.019288128852654605
+      ],
+      "delta_macro_f1_ci95": [
+        0.00548026328358184,
+        0.019500623612135604
+      ],
+      "holm_adjusted_p": 0.0006026213284022767
+    },
+    {
+      "dataset": "hatespeech",
+      "seed": 62,
+      "test_n": 5029,
+      "delta_accuracy": 0.020878902366275542,
+      "delta_macro_f1": 0.02101029959567491,
+      "banglabert_correct_mbert_wrong": 241,
+      "mbert_correct_banglabert_wrong": 136,
+      "discordant_pairs": 377,
+      "mcnemar_exact_two_sided_p": 7.046010633920924e-08,
+      "delta_accuracy_ci95": [
+        0.01332272817657586,
+        0.028435076555975342
+      ],
+      "delta_macro_f1_ci95": [
+        0.01343029890065621,
+        0.02855995800968928
+      ],
+      "holm_adjusted_p": 1.409202126784185e-07
+    }
+  ]
+}
